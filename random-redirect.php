@@ -2,10 +2,10 @@
 /*
 Plugin Name: Random Redirect
 Plugin URI: http://wordpress.org/extend/plugins/random-redirect/
-Description: Allows you to create a link to yourblog.example.com/?random which will redirect someone to a random post on your blog, in a StumbleUpon-like fashion. You can also specific in the URL random_post_type or random_cat_id.
+Description: Allows you to create a link to yourblog.example.com/?random which will redirect someone to a random post on your blog, in a StumbleUpon-like fashion. You can also specific in the URL `random_post_type` or `random_cat_id`.
 Version: 1.1
 Author: Matt Mullenweg
-Author URI: http://photomatt.net/
+Author URI: http://ma.tt/
 */
 
 //TODO : Add URL-Rewrite
@@ -32,6 +32,6 @@ function matt_random_redirect() {
 }
 
 if ( isset( $_GET['random'] ) )
-add_action( 'template_redirect', 'matt_random_redirect' );
+	add_action( 'template_redirect', 'matt_random_redirect' );
 
 ?>
